@@ -1,0 +1,12 @@
+{
+    "gridSectionData": [
+        {
+            "title": "Music",
+            "description": "Music Description"
+        },
+        {
+            "title": "Code",
+            "description": "Code Description"
+        }
+    ]
+}

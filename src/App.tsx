@@ -1,8 +1,10 @@
 import { FC } from "react";
+import GridSection from "./Components/GridSection";
 import MediaRedirect from "./Components/MediaRedirect";
 import NavBar from "./Components/NavBar";
 import useTheme from "./Hooks/useTheme";
 import "./styles/globals.css";
+import { gridSectionData } from "./values/gridSection.json";
 import { socialMedia } from "./values/socialMedia.json";
 
 const App: FC<{}> = () => {
@@ -35,10 +37,15 @@ const App: FC<{}> = () => {
       >
         <p>Savvas Papageorgiadis</p>
       </div>
-      <div className={`flex flex-col justify-center items-center my-20 `}>
+      <div className={`flex flex-row justify-center gap-48 my-20`}>
+        {gridSectionData.map((data) => (
+          <GridSection {...data} />
+        ))}
+      </div>
+      <div className={`flex flex-col justify-center items-center pt-10 pb-20 `}>
         <div
-          className={`flex flex-col space-y-4 py-4 px-1 shadow-md border-2  rounded-3xl bg-gray-50 ${onTheme(
-            "bg-white border-gray-100",
+          className={`flex flex-col space-y-4 py-4 px-1 shadow-md border-2  rounded-3xl  ${onTheme(
+            "bg-gray-50 border-gray-100",
             "bg-slate-700 border-gray-600"
           )}`}
         >
