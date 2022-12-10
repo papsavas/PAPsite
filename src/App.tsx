@@ -3,40 +3,17 @@ import MediaRedirect from "./Components/MediaRedirect";
 import NavBar from "./Components/NavBar";
 import useTheme from "./Hooks/useTheme";
 import "./styles/globals.css";
-import { SocialMedia } from "./types.ts/socialMedia";
-
-const socialMedia: SocialMedia[] = [
-  // {
-  //   name: 'Facebook',
-  //   redirect: 'https://www.facebook.com/papsavas/',
-  //   iconPath: '/icons/icons8-facebook.svg',
-  // },
-  {
-    name: "Instagram",
-    redirect: "https://www.instagram.com/papsavas/",
-    iconPath: "/icons/icons8-instagram.svg",
-  },
-  {
-    name: "Youtube",
-    redirect: "https://www.youtube.com/@papsavasyt",
-    iconPath: "/icons/icons8-youtube.svg",
-  },
-  {
-    name: "TikTok",
-    redirect: "https://www.tiktok.com/@papsavas",
-    iconPath: "/icons/icons8-tiktok.svg",
-  },
-];
+import { socialMedia } from "./values/socialMedia.json";
 
 const App: FC<{}> = () => {
   const { onTheme } = useTheme();
 
   return (
-    <div className={onTheme("bg-white", "bg-gray-800")}>
+    <div className={`min-h-full ${onTheme("bg-white", "bg-gray-800")}`}>
       <NavBar />
       <div className="flex justify-center items-center">
         <img
-          src="/IMG_2172PH3.jpg"
+          src="/IMG_2172PH4.jpg"
           className="h-48 w-48 object-fill rounded-full pointer-events-none"
           alt="pic"
         ></img>

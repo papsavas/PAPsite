@@ -1,0 +1,19 @@
+{
+    "socialMedia": [
+        {
+            "name": "Instagram",
+            "redirect": "https://www.instagram.com/papsavas/",
+            "iconPath": "/icons/icons8-instagram.svg"
+        },
+        {
+            "name": "Youtube",
+            "redirect": "https://www.youtube.com/@papsavasyt",
+            "iconPath": "/icons/icons8-youtube.svg"
+        },
+        {
+            "name": "TikTok",
+            "redirect": "https://www.tiktok.com/@papsavas",
+            "iconPath": "/icons/icons8-tiktok.svg"
+        }
+    ]
+}
