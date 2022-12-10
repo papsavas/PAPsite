@@ -13,7 +13,7 @@ const App: FC<{}> = () => {
       <NavBar />
       <div className="flex justify-center items-center">
         <img
-          src="/IMG_2172PH3.jpg"
+          src="/IMG_2172PH4.jpg"
           className="h-48 w-48 object-fill rounded-full pointer-events-none"
           alt="pic"
         ></img>
