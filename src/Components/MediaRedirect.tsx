@@ -8,7 +8,6 @@ const MediaRedirect: FC<SocialMedia> = ({ name, redirect, iconPath }) => {
     <a
       href={redirect}
       target="_blank"
-      // onClick={navigate}
       className={`
         flex flex-row items-center  w-56 px-5 rounded-2xl
         hover:shadow-md hover:cursor-pointer
