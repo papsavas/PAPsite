@@ -8,16 +8,21 @@ const GridSection: FC<{ title: string; description: string }> = ({
   const { onTheme } = useTheme();
   return (
     <div
-      className={`flex flex-col items-center justify-around break-all
-        w-96 h-52 shadow-md border-2 rounded-3xl cursor-pointer
+      className={`
+        w-96 h-52 shadow-md border-2 rounded-3xl cursor-pointer p-6
      ${onTheme(
        "text-slate-600 bg-gray-50 border-gray-100 hover:bg-gray-100",
        "text-slate-200 bg-slate-700 border-gray-600 hover:bg-slate-600"
      )} 
-     hover:shadow-xl`}
+    group hover:shadow-xl hover:scale-110 transition-all duration-300`}
     >
-      <h2 className="text-5xl">{title}</h2>
-      <p>{description}</p>
+      <div className="flex flex-col items-center break-all">
+        <h2 className="text-5xl mb-5">{title}</h2>
+        {/* // TODO: space evenly */}
+        <p className="place-self-center max-h-24 overflow-auto [&::-webkit-scrollbar]:hidden opacity-0 group-hover:opacity-100 transition-all duration-500">
+          {description}
+        </p>
+      </div>
     </div>
   );
 };
