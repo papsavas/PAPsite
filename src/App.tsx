@@ -28,14 +28,14 @@ const App: FC<{}> = () => {
         </h1>
       </div>
       <div
-        className={`flex justify-center text-3xl p-10 ${onTheme(
-          "text-black",
+        className={`flex justify-center text-3xl m-5 ${onTheme(
+          "text-slate-700",
           "text-slate-300"
         )}`}
       >
         <p>Savvas Papageorgiadis</p>
       </div>
-      <div className={`flex flex-col justify-center items-center pt-10 pb-20 `}>
+      <div className={`flex flex-col justify-center items-center my-20 `}>
         <div
           className={`flex flex-col space-y-4 py-4 px-1 shadow-md border-2  rounded-3xl bg-gray-50 ${onTheme(
             "bg-white border-gray-100",
