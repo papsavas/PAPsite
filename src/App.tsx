@@ -11,7 +11,12 @@ const App: FC<{}> = () => {
   const { onTheme } = useTheme();
 
   return (
-    <div className={`min-h-full ${onTheme("bg-white", "bg-gray-800")}`}>
+    <div
+      className={`min-h-screen min-w-screen ${onTheme(
+        "bg-white",
+        "bg-gray-800"
+      )}`}
+    >
       <NavBar />
       <div className="flex justify-center items-center">
         <img
@@ -37,7 +42,9 @@ const App: FC<{}> = () => {
       >
         <p>Savvas Papageorgiadis</p>
       </div>
-      <div className={`flex flex-row justify-center gap-48 my-20`}>
+      <div
+        className={`grid grid-flow-col grid-cols-2 place-items-center gap-[20%] mx-[12%] my-20`}
+      >
         {gridSectionData.map((data) => (
           <GridSection {...data} />
         ))}
