@@ -5,7 +5,7 @@ import ThemeToggle from "./ThemeToggle";
 //TODO: rename
 const NavBar: FC<{}> = () => {
   return (
-    <div className={`min-w-full mb-10 bg-[#424549] dark:bg-gray-600`}>
+    <div className={`min-w-full mb-10 bg-navbar dark:bg-navbar-dark`}>
       <div className="flex justify-between items-center mx-[15%]">
         <a className="text-3xl" href="/">
           <svg

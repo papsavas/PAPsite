@@ -23,7 +23,7 @@ const Home = () => {
         </h1>
       </div>
       <div
-        className={`flex justify-center text-3xl m-5 text-slate-700 dark:text-slate-300`}
+        className={`flex justify-center text-3xl m-5 text-text dark:text-text-dark`}
       >
         <p>Savvas Papageorgiadis</p>
       </div>
@@ -37,8 +37,8 @@ const Home = () => {
       <div className={`flex flex-col justify-center items-center pt-10 pb-20 `}>
         <div
           className={`flex flex-col space-y-4 py-4 px-1 shadow-md border-2  rounded-3xl
-              bg-gray-50 border-gray-100
-              dark:bg-slate-700 dark:border-gray-600
+              bg-grid border-border
+              dark:bg-grid-dark dark:border-border-dark
             `}
         >
           {socialMedia.map((sm) => (

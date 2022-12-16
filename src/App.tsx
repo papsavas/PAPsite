@@ -13,11 +13,10 @@ const App: FC<{}> = () => {
     <div className={theme}>
       <div
         className={`min-h-screen min-w-screen 
-          bg-white
-          dark:bg-gray-800
+          bg-background dark:bg-background-dark
         `}
       >
-        <NavBar />
+        <NavBar />z
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
