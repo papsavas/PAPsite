@@ -1,11 +1,13 @@
 import { FC } from "react";
 
-const GridSection: FC<{ title: string; description: string }> = ({
+const GridSection: FC<{ title: string; path: string; description: string }> = ({
   title,
+  path,
   description,
 }) => {
   return (
-    <div
+    <a
+      href={path}
       className={`
         w-[90%] h-48 px-6
         shadow-md border-2 rounded-3xl 
@@ -24,7 +26,7 @@ const GridSection: FC<{ title: string; description: string }> = ({
           {description}
         </p>
       </div>
-    </div>
+    </a>
   );
 };
 

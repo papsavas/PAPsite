@@ -1,13 +1,31 @@
 import { FC } from "react";
-import Home from "./Components/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavBar from "./Components/NavBar";
 import useTheme from "./Hooks/useTheme";
+import Code from "./pages/Code";
+import Home from "./pages/Home";
+import Music from "./pages/Music";
 import "./styles/globals.css";
 
 const App: FC<{}> = () => {
   const { theme } = useTheme();
   return (
     <div className={theme}>
-      <Home />
+      <div
+        className={`min-h-screen min-w-screen 
+          bg-white
+          dark:bg-gray-800
+        `}
+      >
+        <NavBar />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/music" element={<Music />} />
+            <Route path="/code" element={<Code />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </div>
   );
 };
