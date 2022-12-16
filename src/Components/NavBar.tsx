@@ -2,6 +2,7 @@ import { FC } from "react";
 import "../styles/globals.css";
 import ThemeToggle from "./ThemeToggle";
 
+//TODO: rename
 const NavBar: FC<{}> = () => {
   return (
     <div className={`min-w-full pb-12`}>
