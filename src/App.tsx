@@ -16,7 +16,7 @@ const App: FC<{}> = () => {
           bg-background dark:bg-background-dark
         `}
       >
-        <NavBar />z
+        <NavBar />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
