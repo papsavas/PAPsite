@@ -9,7 +9,7 @@ const GridSection: FC<{ title: string; path: string; description: string }> = ({
     <a
       href={path}
       className={`
-        w-[90%] h-48 px-6
+        w-[86%] h-56 px-6
         shadow-md border-2 rounded-3xl 
         cursor-pointer
        text-slate-600 bg-gray-50 border-gray-100 hover:bg-gray-100
@@ -19,10 +19,7 @@ const GridSection: FC<{ title: string; path: string; description: string }> = ({
       <div className="flex flex-col justify-items-center items-center break-all">
         <h2 className="text-xl my-4">{title}</h2>
         {/* // TODO: space evenly */}
-        <p
-          className="h-24 my-auto overflow-auto [&::-webkit-scrollbar]:hidden
-         opacity-0 group-hover:opacity-100 transition-opacity duration-700"
-        >
+        <p className="h-32 rounded-xl my-auto overflow-auto [&::-webkit-scrollbar]:hidden">
           {description}
         </p>
       </div>

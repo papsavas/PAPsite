@@ -28,7 +28,7 @@ const Home = () => {
         <p>Savvas Papageorgiadis</p>
       </div>
       <div
-        className={`grid grid-flow-col grid-cols-2 place-items-center gap-[20%] mx-[12%] my-20`}
+        className={`grid grid-flow-col grid-cols-2 place-items-center gap-[7%] mx-[10%] my-28`}
       >
         {gridSectionData.map((data) => (
           <GridSection {...data} />
@@ -51,6 +51,7 @@ const Home = () => {
           Icons provided by{" "}
           <a
             href="https://icons8.com"
+            target="_blank"
             className="underline underline-offset-2 text-slate-400"
           >
             icons8
