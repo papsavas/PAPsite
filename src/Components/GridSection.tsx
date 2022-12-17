@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 
 const GridSection: FC<{ title: string; path: string; description: string }> = ({
   title,
@@ -6,8 +7,8 @@ const GridSection: FC<{ title: string; path: string; description: string }> = ({
   description,
 }) => {
   return (
-    <a
-      href={path}
+    <Link
+      to={path}
       className={`
         w-[86%] h-56 px-6
         shadow-md border-2 rounded-3xl 
@@ -30,7 +31,7 @@ const GridSection: FC<{ title: string; path: string; description: string }> = ({
           {description}
         </p>
       </div>
-    </a>
+    </Link>
   );
 };
 

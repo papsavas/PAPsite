@@ -7,7 +7,8 @@ const NavBar: FC<{}> = () => {
   return (
     <div className={`min-w-full mb-10 bg-navbar dark:bg-navbar-dark`}>
       <div className="flex justify-between items-center mx-[15%]">
-        <a className="text-3xl" href="/">
+        {/* //? `Link` renders no content */}
+        <a href="/" className="text-3xl">
           <svg
             className="fill-slate-100 hover:shadow-sm hover:scale-105 transition-all duration-300"
             xmlns="http://www.w3.org/2000/svg"
