@@ -28,7 +28,7 @@ const Home = () => {
         <p>Savvas Papageorgiadis</p>
       </div>
       <div
-        className={`grid grid-flow-col grid-cols-2 place-items-center gap-[7%] mx-[10%] my-28`}
+        className={`grid grid-flow-row lg:grid-flow-col lg:grid-cols-2 place-items-center gap-[7%] mx-[10%] my-28`}
       >
         {gridSectionData.map((data) => (
           <GridSection {...data} />
