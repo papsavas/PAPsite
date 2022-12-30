@@ -6,10 +6,8 @@ const ThemeProvider: FC<PropsWithChildren> = ({ children }) => {
   const [theme, setTheme] = useLocalStorage<Theme>("theme", "light");
   const toggleTheme = () =>
     theme === "light" ? setTheme("dark") : setTheme("light");
-  const onTheme = (light: string, dark: string) =>
-    theme === "light" ? light : dark;
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, onTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
